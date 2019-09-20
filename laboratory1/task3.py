@@ -3,14 +3,14 @@ print("Даниленко Кірілл Артурович \nЛабораторн
 
 def myfunc():
     try:
-        x = float(input("Введите значение x: "))
+        user_input_x = float(input("Введите значение x: "))
     except:
         print("Введите числовое значение!")
         myfunc()
 
-    if x >= 3 :
+    if user_input_x >= 3 :
 
-        print("x = %.4f" %(x**2 - 3*x +9))
+        print("x = %.4f" %(user_input_x**2 - 3*user_input_x +9))
         c = input("Продолжить тестирование программы? Y/N")
         if c == 'Y' or c == 'y':
             myfunc()
@@ -18,7 +18,7 @@ def myfunc():
             return ()
 
     else:
-        print("x = %.4f" %(1/(x**3-6)))
+        print("x = %.4f" %(1/(user_input_x**3-6)))
         c = input("Продолжить тестирование программы? Y/N")
         if c == 'Y' or c == 'y':
             myfunc()
