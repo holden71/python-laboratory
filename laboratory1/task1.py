@@ -2,10 +2,10 @@ print("Даниленко Кірілл Артурович \nЛабораторн
 
 def myfunc():
     try:
-        a = float(input("Введите число a: "))
-        b = float(input("Введите число b: "))
-        if a > 0 and b > 0:
-            print("x = %.2f"  %((b / a) * 100))
+        user_float_input_a = float(input("Введите число a: "))
+        user_float_input_b = float(input("Введите число b: "))
+        if user_float_input_a > 0 and user_float_input_b > 0:
+            print("x = %.2f"  %((user_float_input_b / user_float_input_a) * 100))
 
 
 
